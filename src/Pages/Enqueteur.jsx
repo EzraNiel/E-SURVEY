@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ClientD() {
+function Enqueteur() {
   // STATE (état,données)
 
   // COMPORTEMENT
@@ -8,14 +8,12 @@ function ClientD() {
   //   AFFICHAGE (RENDER)
   return (
     <>
-      <h1>Client_direct</h1>
+      <h1>Enqueteo</h1>
       <div className="ClientD">
-        <Link to="/">Client_d</Link>
-        <Link to="/Pdg">Pdg</Link>
-        <Link to="/Admin">Admin</Link>
+        <Link to="/">Acceuil</Link>
       </div>
     </>
   );
 }
 
-export default ClientD;
+export default Enqueteur;
