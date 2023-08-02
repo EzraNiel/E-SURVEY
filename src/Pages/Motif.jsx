@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Admin() {
+function ClientD() {
   // STATE (état,données)
 
   // COMPORTEMENT
@@ -8,8 +8,8 @@ function Admin() {
   //   AFFICHAGE (RENDER)
   return (
     <>
-      <h1>Administrateur</h1>
-      <div className="Admin">
+      <h1>Motif de sondage</h1>
+      <div className="ClientD">
         <Link to="/">Client_d</Link>
         <Link to="/Pdg">Pdg</Link>
         <Link to="/Admin">Admin</Link>
@@ -18,4 +18,4 @@ function Admin() {
   );
 }
 
-export default Admin;
+export default ClientD;

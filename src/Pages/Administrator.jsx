@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Pdg() {
+function Administrator() {
   // STATE (état,données)
 
   // COMPORTEMENT
@@ -8,14 +8,12 @@ function Pdg() {
   //   AFFICHAGE (RENDER)
   return (
     <>
-      <h1>PDG</h1>
+      <h1>Administrator</h1>
       <div className="Pdg">
-        <Link to="/">Client_d</Link>
-        <Link to="/Pdg">Pdg</Link>
-        <Link to="/Admin">Admin</Link>
+        <Link to="/">Acceuil</Link>
       </div>
     </>
   );
 }
 
-export default Pdg;
+export default Administrator;

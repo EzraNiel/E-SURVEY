@@ -1,7 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Admin from "./Pages/Admin";
-import ClientD from "./Pages/ClientD";
-import Pdg from "./Pages/Pdg";
+import Accueil from "./Pages/Accueil";
+import Administrator from "./Pages/Administrator";
+import Apropos from "./Pages/Apropos";
+import Client from "./Pages/Client";
+import CompteClient from "./Pages/CompteClient";
+import Contact from "./Pages/Contact";
+import CreationDeFormulaire from "./Pages/CreationDeFormulaire";
+import Enqueteur from "./Pages/Enqueteur";
+import Motif from "./Pages/Motif";
 
 function App() {
   // STATE (état,données)
@@ -13,9 +19,21 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ClientD></ClientD>} />
-          <Route path="/Pdg" element={<Pdg></Pdg>} />
-          <Route path="/Admin" element={<Admin></Admin>} />
+          <Route path="/" element={<Accueil></Accueil>} />
+          <Route path="/Contact" element={<Contact></Contact>} />
+          <Route path="/Apropos" element={<Apropos></Apropos>} />
+          <Route
+            path="/Administrator"
+            element={<Administrator></Administrator>}
+          />
+          <Route path="/Client" element={<Client></Client>} />
+          <Route path="/Enqueteur" element={<Enqueteur></Enqueteur>} />
+          <Route path="/Motif" element={<Motif></Motif>} />
+          <Route path="/CompteClient" element={<CompteClient></CompteClient>} />
+          <Route
+            path="/CreationDeFormulaire"
+            element={<CreationDeFormulaire></CreationDeFormulaire>}
+          />
         </Routes>
       </BrowserRouter>
     </div>
